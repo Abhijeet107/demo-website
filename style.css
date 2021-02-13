@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: 'navbar navbar navbar navbar' 'section section section section' 'categories categories categories categories' 'categories1 categories1 categories1 categories1' 'categories2 categories2 categories2 categories2' 'categories3 categories3 categories3 categories3' 'categories4 categories4 categories4 categories4' 'categories5 categories5 categories5 categories5' 'categories6 categories6 categories6 categories6' 'categories7 categories7 categories7 categories7' 'footer footer footer footer' 'box5 box5 box5 box5' 'footer1 footer1 footer1 footer2' ;
+}
+.item{
+  background-color: blanchedalmond;
+  border: 0px solid black;
+}
+#navbar{
+ grid-area: navbar;
+}
+.logo{
+  cursor: pointer;
+}
+nav{
+  flex: 1;
+  text-align: center;
+}
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul img{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: #555;
+}
+#section{
+ grid-area: section;
+}
+/* -------item categories------ */
+#categories{
+  grid-area: categories;
+}
+.item1 img{
+  width: 358px;
+  height: 325px;
+  cursor: pointer;
+}
+ #categories1{
+  grid-area: categories1;
+} 
+.item2 img{
+  width: 358px;
+  height: 325px;
+  cursor: pointer; 
+}
+#categories2{
+  grid-area: categories2;
+} 
+.item3 img{
+  width: 298px;
+  height: 285px;
+  cursor: pointer; 
+}
+#categories3{
+  grid-area: categories3;
+} 
+#categories4{
+  grid-area: categories4;
+} 
+.item5 img{
+  width: 340px;
+  height: 320px;
+  cursor: pointer;
+}
+#categories5{
+  grid-area: categories5;
+}
+.item6 img{
+  width: 340px;
+  height: 320px;
+  cursor: pointer;
+}
+#categories6{
+  grid-area: categories6;
+}
+.item7 img{
+  width: 340px;
+  height: 320px;
+  cursor: pointer;
+}
+#categories7{
+  grid-area: categories7;
+}
+.item8 img{
+  width: 340px;
+  height: 320px;
+  cursor: pointer;
+}
+/* -----footer----- */
+
+footer{
+   grid-area: footer;
+   display: grid;
+   grid-template-columns: repeat(4, 190px) 100px;
+   /* border: 2px solid black; */
+   /* background-color: #555; */
+} 
+.box5{
+  grid-area: box5;
+}
+.footer1{
+  grid-area: footer1;
+}
+.footer1 a{
+color: blue;
+}
+.footer2 {
+  grid-area: footer2;
+} 
+
